@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormattedMessage } from '../../util/reactIntl';
+// import { FormattedMessage } from '../../util/reactIntl';
 // import { PropertyGroup } from '../../components';
 
 // import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';

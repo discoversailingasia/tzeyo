@@ -13,7 +13,7 @@ const SectionFeaturesMaybe = props => {
   const selectedOptions = publicData && publicData.amenities ? publicData.amenities : [];
 
   console.log(selectedOptions);
-  if (selectedOptions === undefined || selectedOptions.length == 0){
+  if (selectedOptions === undefined || selectedOptions.length === 0){
     return null;
   }
   // const productsArray=publicData.products ? publicData.products:[];

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FormattedMessage } from '../../util/reactIntl';
+// import { FormattedMessage } from '../../util/reactIntl';
 // import { PropertyGroup } from '../../components';
 
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
@@ -57,7 +57,7 @@ const SectionNonObligatoryAddonsMaybe = props => {
     console.log(toDisplayProduct);
     console.log(toDisplayProduct.name);
 
-    var productName = toDisplayProduct.name;
+    // var productName = toDisplayProduct.name;
     // Finally this section is working
 
     // how abt the following section? I'm finding so many troubles trying to concat string?
@@ -81,9 +81,9 @@ const SectionNonObligatoryAddonsMaybe = props => {
     
     console.log(non_obligatory_addons);
 
-    function calcAddonPrice(index, checked){
+    // function calcAddonPrice(index, checked){
 
-    }
+    // }
     // var options=[{key: "skippers", label: "Skippers"},{key: "sample", label: "Sample"},{key: "rua", label: "Rua"},{key: "duang", label: "Duang"}];
     return (
         <div className={css.sectionFeatures}>

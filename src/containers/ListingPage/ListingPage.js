@@ -59,8 +59,8 @@ import SectionRulesMaybe from './SectionRulesMaybe';
 import SectionMapMaybe from './SectionMapMaybe';
 
 import SectionAddonsMaybe from './SectionAddonsMaybe';
-import SectionNonObligatoryAddonsMaybe from './SectionNonObligatoryAddonsMaybe';
-import SectionTempNonObli from './SectionTempNonObli';
+// import SectionNonObligatoryAddonsMaybe from './SectionNonObligatoryAddonsMaybe';
+// import SectionTempNonObli from './SectionTempNonObli';
 
 import css from './ListingPage.css';
 
@@ -469,17 +469,17 @@ export class ListingPageComponent extends Component {
 
 
                   <SectionDescriptionMaybe description={description} />
-                  {/* <SectionAddonsMaybe
+                  <SectionAddonsMaybe
                     // options={amenityOptions}
                     publicData={publicData}
-                  /> */}
-                  <SectionNonObligatoryAddonsMaybe
-                    publicData={publicData}
                   />
-                  <SectionTempNonObli
+                  {/* <SectionNonObligatoryAddonsMaybe
+                    publicData={publicData}
+                  /> */}
+                  {/* <SectionTempNonObli
                     publicData={publicData}
                     totalAddonPrice={addonPrice}
-                    onAddonSelection={this.calculateTotal}></SectionTempNonObli>
+                    onAddonSelection={this.calculateTotal}></SectionTempNonObli> */}
                   <SectionFeaturesMaybe options={amenityOptions} publicData={publicData} />
                   <SectionRulesMaybe publicData={publicData} />
                   <SectionMapMaybe

@@ -5,7 +5,7 @@ import { Form as FinalForm } from 'react-final-form';
 import { intlShape, injectIntl, FormattedMessage } from '../../util/reactIntl';
 import classNames from 'classnames';
 import { propTypes } from '../../util/types';
-import { Form, Button, FieldTextInput } from '../../components';
+import { Form, Button} from '../../components';
 
 import BootstrapTable from 'react-bootstrap-table-next';
 import cellEditFactory, { Type } from 'react-bootstrap-table2-editor';
@@ -22,7 +22,7 @@ export const EditListingAddonFormComponent = props => (
         disabled,
         ready,
         handleSubmit,
-        intl,
+        // intl,
         invalid,
         pristine,
         saveActionMsg,
@@ -31,12 +31,12 @@ export const EditListingAddonFormComponent = props => (
         fetchErrors,
       } = formRenderProps;
 
-      const rulesLabelMessage = intl.formatMessage({
-        id: 'EditListingPoliciesForm.rulesLabel',
-      });
-      const rulesPlaceholderMessage = intl.formatMessage({
-        id: 'EditListingPoliciesForm.rulesPlaceholder',
-      });
+      // const rulesLabelMessage = intl.formatMessage({
+      //   id: 'EditListingPoliciesForm.rulesLabel',
+      // });
+      // const rulesPlaceholderMessage = intl.formatMessage({
+      //   id: 'EditListingPoliciesForm.rulesPlaceholder',
+      // });
 
       const { updateListingError, showListingsError } = fetchErrors || {};
       const errorMessage = updateListingError ? (

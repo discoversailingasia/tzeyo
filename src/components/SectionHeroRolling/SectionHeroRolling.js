@@ -1,12 +1,12 @@
 import React,{Component} from 'react';
 import { string } from 'prop-types';
-import { FormattedMessage } from '../../util/reactIntl';
+// import { FormattedMessage } from '../../util/reactIntl';
 // import classNames from 'classnames';
-import { NamedLink,SecondaryButton,PrimaryButton } from '../../components';
+import { NamedLink} from '../../components';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import css from './SectionHeroRolling.css';
+// import css from './SectionHeroRolling.css';
 import Button from 'react-bootstrap/Button';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 

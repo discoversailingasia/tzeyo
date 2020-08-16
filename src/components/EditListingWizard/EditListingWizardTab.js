@@ -17,7 +17,7 @@ import {
   EditListingPhotosPanel,
   EditListingPoliciesPanel,
   EditListingPricingPanel,
-  EditListingAddonPanel,
+  // EditListingAddonPanel,
 } from '../../components';
 
 import css from './EditListingWizard.css';
@@ -28,7 +28,7 @@ export const FEATURES = 'features';
 export const POLICY = 'policy';
 export const LOCATION = 'location';
 export const PRICING = 'pricing';
-export const ADDON='addon';
+// export const ADDON='addon';
 export const PHOTOS = 'photos';
 
 // EditListingWizardTab component supports these tabs
@@ -38,7 +38,7 @@ export const SUPPORTED_TABS = [
   POLICY,
   LOCATION,
   PRICING,
-  ADDON,
+  // ADDON,
   AVAILABILITY,
   PHOTOS,
 ];
@@ -230,20 +230,20 @@ const EditListingWizardTab = props => {
         />
       );
     }
-    case ADDON: {
-      const submitButtonTranslationKey = isNewListingFlow
-        ? 'EditListingWizard.saveNewAddon'
-        : 'EditListingWizard.saveEditAddon';
-      return (
-        <EditListingAddonPanel
-          {...panelProps(ADDON)}
-          submitButtonText={intl.formatMessage({ id: submitButtonTranslationKey })}
-          onSubmit={values => {
-            onCompleteEditListingWizardTab(tab, values);
-          }}
-        />
-      );
-    }
+    // case ADDON: {
+    //   const submitButtonTranslationKey = isNewListingFlow
+    //     ? 'EditListingWizard.saveNewAddon'
+    //     : 'EditListingWizard.saveEditAddon';
+    //   return (
+    //     <EditListingAddonPanel
+    //       {...panelProps(ADDON)}
+    //       submitButtonText={intl.formatMessage({ id: submitButtonTranslationKey })}
+    //       onSubmit={values => {
+    //         onCompleteEditListingWizardTab(tab, values);
+    //       }}
+    //     />
+    //   );
+    // }
     case AVAILABILITY: {
       const submitButtonTranslationKey = isNewListingFlow
         ? 'EditListingWizard.saveNewAvailability'

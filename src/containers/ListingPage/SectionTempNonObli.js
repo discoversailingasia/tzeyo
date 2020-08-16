@@ -1,8 +1,6 @@
 
 import React, { Component } from "react";
 import CheckBox from "./CheckBox";
-import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
-import ToggleButton from 'react-bootstrap/ToggleButton';
 import css from './ListingPage.css';
 
 // import { Button, FieldCheckboxGroup, Form } from '../../components';
@@ -80,7 +78,7 @@ export class SectionTempNonObli extends Component {
         console.log(toDisplayProduct);
         console.log(toDisplayProduct.name);
 
-        var productName = toDisplayProduct.name;
+        // var productName = toDisplayProduct.name;
         // Finally this section is working
 
         // how abt the following section? I'm finding so many troubles trying to concat string?
@@ -100,7 +98,7 @@ export class SectionTempNonObli extends Component {
             // tempString.concat(temp_name,temp_price.toString(),temp_unit,"....");
         }
         console.log(non_obligatory_addons);
-        const totalAddonPrice=this.props.addonPrice;
+        // const totalAddonPrice=this.props.addonPrice;
         return (
             <div className={css.sectionFeatures}>
       <h2 className={css.featuresTitle}>

@@ -8,7 +8,7 @@ import { isScrollingDisabled } from '../../ducks/UI.duck';
 import config from '../../config';
 import {
   Page,
-  SectionHero,
+  // SectionHero,
   SectionHowItWorks,
   SectionLocations,
   LayoutSingleColumn,
@@ -26,8 +26,8 @@ import twitterImage from '../../assets/contrast.png';
 import css from './LandingPage.css';
 
 export const LandingPageComponent = props => {
-  const { history, intl, location, scrollingDisabled } = props;
-
+  // const { history, intl, location, scrollingDisabled } = props;
+  const { intl, scrollingDisabled } = props;
   // Schema for search engines (helps them to understand what this page is about)
   // http://schema.org
   // We are using JSON-LD format
